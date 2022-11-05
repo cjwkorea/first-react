@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import HeadlessLayout from "components/layouts/HeadlessLayout";
+import Footer from "components/commons/Footer";
 
 const Counter = () => {
   const navigate = useNavigate();
@@ -21,6 +22,7 @@ const Counter = () => {
       
       {/* <Link to-{"/"}> 메인으로 이동하는 페이지*/ }
       <button onClick={() => navigate("/")}>메인으로 이동</button>
+      <Footer />
     </div>
     </HeadlessLayout>
   );
